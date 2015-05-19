@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css">
+    <link rel="stylesheet" href="css/font.css">
+    <title>Javier Estrada</title>
+</head>
+
+<body>
+    <div id="nav" class="navigation">
+        <ul>
+            <li data-menuanchor="one"><a href="#one">one</a></li>
+            <li data-menuanchor="two"><a href="#two">two</a></li>
+            <li data-menuanchor="three"><a href="#three">three</a></li>
+            <li data-menuanchor="four"><a href="#four">four</a></li>
+        </ul>
+    </div>
+    <div id="fullpage">
+        <section id="intro one" class="intro section">
+            <h1>Hi, I'm Javie.<br>I make things for the web</h1>
+            <img src="img/core.png" alt="">
+        </section>
+        <section id="uno two" class="project_1 section">
+            <h1>Project 1</h1>
+            <p>I'm working on design that utilizes skrollr.
+                <br>This is where it'll go when its done.</p>
+            <div class="link_box">
+                <a href="#uno">
+                    Link to project
+                </a>
+            </div>
+        </section>
+        <section id="dos three" class="project_2 section">
+            <h1>Project 2</h1>
+            <p>Just another place holder for future projects and case studies.
+                <br> Keep going though, the next section tells you a little bit about me.</p>
+            <div class="link_box">
+                <a href="#dos">
+                    <p>Link to project</p>
+                </a>
+            </div>
+        </section>
+        <section id="about four" class="about section">
+            <img src="img/me.jpg" alt="">
+            <p>My name is Javier Estrada and I’m a web designer. I really enjoy making simple and clean designs. Ive been learning all I can from various resources for the past year and working at a small design studio for the past 5 months. I’m currently shifting my focus to mobile design because I really enjoy how I interact with products on my phone. Im hoping to pick up a position as a designer in the near future and get my career started. Thanks for taking the time to look, if you wanna get to know me a bit better here are some links to my social media</p>
+            <ul>
+                <li data-scroll-reveal="wait .1s over 1s">
+                    <a href=""><i class="fa fa-twitter fa-lg"></i></a>
+                </li>
+                <li data-scroll-reveal="wait .23s over 1s">
+                    <a href=""><i class="fa fa-facebook-official fa-lg"></i></a>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <script src="http://localhost:35729/livereload.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src='js/scrollReveal.js'></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <script>
+    window.scrollReveal = new scrollReveal();
+    </script>
+    <script>
+    $(document).ready(function() {
+        $('#fullpage').fullpage({
+            anchors: ['one', 'two', 'three', 'four'],
+            menu: '#nav'
+        });
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+*{
+	margin:0;
+	text-decoration:none;
+}
+
+a{
+	color:#ff8534;
+}
+body,html{
+	width:100%;
+	height:100%;
+	margin:0;
+}
+
+
+.navigation{
+-webkit-backface-visibility: hidden;
+z-index: 5;
+position: fixed;
+top: 37%;
+right:25px;
+margin-top: -40px;
+}
+
+
+.navigation li{
+height: 10px;
+margin-bottom:70px;
+}
+
+.navigation a{
+display: block;
+width: 13px;
+height: 13px;
+text-indent: -9999px;
+border-radius:25px;
+border: 1px solid #fff
+}
+
+.navigation a:hover{
+border-radius:25px;
+background-color:#fff;
+}
+.navigation a .active{
+border-radius:25px;
+background-color:#fff;
+}
+
+#fullpage{
+	width:100%;
+	height:100%;
+}
+
+.intro{
+	width:100%;
+	height:100%;
+	margin-top:0;
+	background-image:-webkit-linear-gradient(top, #16C08E 0%, #4CCCC1 100%);
+	background-image: linear-gradient(to bottom, #16C08E 0%, #4CCCC1 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #16C08E), color-stop(1, #4CCCC1));
+	background-image: -o-linear-gradient(top, #16C08E 0%, #4CCCC1 100%);
+	background-image: -moz-linear-gradient(top, #16C08E 0%, #4CCCC1 100%);
+	background-image: -ms-linear-gradient(top, #16C08E 0%, #4CCCC1 100%);
+		h1{
+			text-align:center;
+			font-size:50px;
+			color:#fff;
+			position:relative;
+			top:30%;
+			background:rgba(0,0,0,0);
+			font-family:"MavenProRegular";
+		}
+		img{
+		}
+
+
+}
+
+.project_1{
+	width:100%;
+	height:100%;
+	background: url("../img/booey.jpg")  center no-repeat;
+	background-size:cover;
+	h1,p{
+		color:#fff;
+	}
+}
+
+.project_2{
+	width:100%;
+	height:100%;
+	background: url("../img/dude.jpg")  center no-repeat;
+	background-size: cover;
+}
+
+.about{
+	width:100%;
+	height:100%;
+	background-image: -ms-linear-gradient(top, #4CCCC1 0%, #16C08E 100%);
+	background-image: -moz-linear-gradient(top, #4CCCC1 0%, #16C08E 100%);
+	background-image: -o-linear-gradient(top, #4CCCC1 0%, #16C08E 100%); 
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4CCCC1), color-stop(1, #16C08E));
+	background-image: -webkit-linear-gradient(top, #4CCCC1 0%, #16C08E 100%);
+	background-image: linear-gradient(to bottom, #4CCCC1 0%, #16C08E 100%);
+
+}
+
