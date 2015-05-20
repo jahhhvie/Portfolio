@@ -51,6 +51,24 @@ h1 {
   width: 100%;
   height: 100%; }
 
+.arrow {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  background: url("../img/core.png") no-repeat;
+  background-size: contain;
+  z-index: 50;
+  -webkit-animation: bounce 4s infinite;
+  /* Safari 4+ */
+  -moz-animation: bounce 4s infinite;
+  /* Fx 5+ */
+  -o-animation: bounce 4s infinite;
+  /* Opera 12+ */
+  animation: bounce 4s infinite;
+  /* IE 10+, Fx 29+ */ }
+
 .intro {
   width: 100%;
   height: 100%;
