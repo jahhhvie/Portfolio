@@ -4,8 +4,10 @@
   font-family: "MavenProRegular"; }
 
 a {
-  color: #fff;
-  font-family: "MavenProRegular"; }
+  color: #fff; }
+
+li {
+  list-style-type: none; }
 
 body,
 html {
@@ -35,7 +37,8 @@ html {
 
 .navigation a:hover {
   border-radius: 25px;
-  background-color: #fff; }
+  background-color: #fff;
+  transition: .3s ease-in-out; }
 
 .navigation a .active {
   border-radius: 25px;
@@ -104,8 +107,29 @@ h1 {
   height: 100%;
   background: url("../img/about.jpg") no-repeat;
   background-size: cover; }
+  .about .verb {
+    width: 45%;
+    position: relative;
+    top: 30%;
+    transform: translateX(100%); }
   .about p {
     color: #fff;
     line-height: 175%;
-    font-size: 18px;
-    width: 45%; }
+    font-size: 18px; }
+
+.social {
+  position: relative;
+  top: 33%;
+  transform: translateX(42%); }
+  .social ul {
+    display: block;
+    width: 100px;
+    height: 50px; }
+  .social li {
+    display: inline-block; }
+  .social i {
+    color: #ff8534;
+    transition: color 0.5s ease;
+    margin-right: 15px; }
+  .social i:hover {
+    color: #024039; }
