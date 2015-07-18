@@ -99,7 +99,7 @@
 .button {
   color: #666666;
   background-color: #eeeeee;
-  border-color: #ff8534;
+  border-color: #FFD700;
   font-weight: 300;
   font-size: 16px;
   font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -192,7 +192,7 @@
 .button-primary,
 .button-primary-flat {
   background-color: #1b9af7;
-  border-color: #ff8534;
+  border-color: #FFD700;
   color: white; }
   .button-primary:visited,
   .button-primary-flat:visited {
@@ -457,7 +457,7 @@
 .button-border, .button-border-thin, .button-border-thick,
 .button-border-thin,
 .button-border-thick {
-  border-color: #ff8534;
+  border-color: #FFD700;
   /*
   * Border Button Size Adjustment
   *
@@ -494,8 +494,8 @@
     .button-border-thin.button-plain:focus,
     .button-border-thick.button-plain:hover,
     .button-border-thick.button-plain:focus {
-      background-color: rgba(255, 255, 255, 0.5);
-      color: rgba(27, 154, 247, 0.9); }
+      background-color: rgba(255, 215, 0, 0.9);
+      color: rgba(255, 255, 255, 0.9); }
     .button-border.button-plain:active, .button-plain.button-border-thin:active, .button-plain.button-border-thick:active, .button-border.button-plain.active, .button-plain.active.button-border-thin, .button-plain.active.button-border-thick, .button-border.button-plain.is-active, .button-plain.is-active.button-border-thin, .button-plain.is-active.button-border-thick,
     .button-border-thin.button-plain:active,
     .button-border-thin.button-plain.active,

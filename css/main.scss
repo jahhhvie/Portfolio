@@ -48,7 +48,7 @@ html {
     transition: .3s ease-in-out;
 }
 
-.navigation a .active {
+.navigation a.active {
     border-radius: 25px;
     background-color: #fff;
 }
@@ -103,6 +103,7 @@ h1 {
     height: 100%;
     background: url("../img/booey.jpg") center no-repeat;
     background-size: cover;
+    position:relative;
     h1, p {
         color: #fff;
         text-align: center;
@@ -115,7 +116,13 @@ h1 {
         top: 40%;
         font-size: 20px;
         line-height: 175%;
-    }
+    } 
+    .button{
+    	z-index:1000;
+    	position:absolute;
+    	top:60%;
+    	left:43%;
+    }  
 }
 
 .project_2 {
@@ -123,6 +130,7 @@ h1 {
     height: 100%;
     background: url("../img/dude.jpg") center no-repeat;
     background-size: cover;
+    position:relative;
     h1, p {
         color: #fff;
         text-align: center;
@@ -136,6 +144,12 @@ h1 {
         font-size: 20px;
         line-height: 175%;
     }
+        .button{
+    	z-index:1000;
+    	position:absolute;
+    	top:60%;
+    	left:43%;
+    } 
 }
 
 .about {
@@ -154,7 +168,6 @@ h1 {
         line-height: 175%;
         font-size: 18px;
     }
-    ul {}
 }
 
 .social {
@@ -170,7 +183,7 @@ h1 {
         display: inline-block;
     }
     i {
-        color: #ff8534;
+        color: #00756B;
         transition: color 0.5s ease;
         margin-right: 15px;
     }

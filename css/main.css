@@ -40,7 +40,7 @@ html {
   background-color: #fff;
   transition: .3s ease-in-out; }
 
-.navigation a .active {
+.navigation a.active {
   border-radius: 25px;
   background-color: #fff; }
 
@@ -92,7 +92,8 @@ h1 {
   width: 100%;
   height: 100%;
   background: url("../img/booey.jpg") center no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
   .project_1 h1, .project_1 p {
     color: #fff;
     text-align: center;
@@ -103,12 +104,18 @@ h1 {
     top: 40%;
     font-size: 20px;
     line-height: 175%; }
+  .project_1 .button {
+    z-index: 1000;
+    position: absolute;
+    top: 60%;
+    left: 43%; }
 
 .project_2 {
   width: 100%;
   height: 100%;
   background: url("../img/dude.jpg") center no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
   .project_2 h1, .project_2 p {
     color: #fff;
     text-align: center;
@@ -119,6 +126,11 @@ h1 {
     top: 40%;
     font-size: 20px;
     line-height: 175%; }
+  .project_2 .button {
+    z-index: 1000;
+    position: absolute;
+    top: 60%;
+    left: 43%; }
 
 .about {
   width: 100%;
@@ -146,7 +158,7 @@ h1 {
   .social li {
     display: inline-block; }
   .social i {
-    color: #ff8534;
+    color: #00756B;
     transition: color 0.5s ease;
     margin-right: 15px; }
   .social i:hover {
