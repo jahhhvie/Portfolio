@@ -1,0 +1,319 @@
+@mixin respond-to($breakpoint) {
+        @if $breakpoint=="small" {
+            @media (min-width: 375px) and (max-width: 667px) {
+                @content;
+            }
+        }
+        @else if $breakpoint=="large" {
+            @media (min-width: 768px) and (max-width: 1024px) {
+                @content;
+            }
+        }
+    }
+
+* {
+            margin: 0;
+            text-decoration: none;
+            font-family: "MavenProRegular";
+        }
+        
+        a {
+            color: #fff;
+        }
+        
+        li {
+            list-style-type: none;
+        }
+        
+        body,
+        html {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+        
+        #fp-nav {
+            position: fixed;
+            z-index: 1000;
+            margin-top: -32px;
+            top: 50%;
+            opacity: 1;
+            -webkit-transform: translate3d(0, 0, 0);
+            @include respond-to('small'){
+                display:none;
+            }
+            @include respond-to('large'){
+                display:none;
+            }
+        }
+        
+        #fp-nav.right {
+            right: 17px;
+        }
+        
+        #fp-nav.left {
+            left: 17px;
+        }
+        
+        .fp-slidesNav {
+            position: absolute;
+            z-index: 4;
+            left: 50%;
+            opacity: 1;
+        }
+        
+        .fp-slidesNav.bottom {
+            bottom: 17px;
+        }
+        
+        .fp-slidesNav.top {
+            top: 17px;
+        }
+        
+        #fp-nav ul,
+        .fp-slidesNav ul {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #fp-nav ul li,
+        .fp-slidesNav ul li {
+            display: block;
+            width: 14px;
+            height: 13px;
+            margin: 7px;
+            position: relative;
+        }
+        
+        .fp-slidesNav ul li {
+            display: inline-block;
+        }
+        
+        #fp-nav ul li a,
+        .fp-slidesNav ul li a {
+            display: block;
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        
+        #fp-nav ul li a.active span,
+        .fp-slidesNav ul li a.active span,
+        #fp-nav ul li:hover a.active span,
+        .fp-slidesNav ul li:hover a.active span {
+            height: 12px;
+            width: 12px;
+            margin: -6px 0 0 -6px;
+            border-radius: 100%;
+        }
+        
+        #fp-nav ul li a span,
+        .fp-slidesNav ul li a span {
+            border-radius: 50%;
+            position: absolute;
+            z-index: 1;
+            height: 4px;
+            width: 4px;
+            border: 0;
+            background: #fff;
+            left: 50%;
+            top: 50%;
+            margin: -2px 0 0 -2px;
+            -webkit-transition: all 0.1s ease-in-out;
+            -moz-transition: all 0.1s ease-in-out;
+            -o-transition: all 0.1s ease-in-out;
+            transition: all 0.1s ease-in-out;
+        }
+        
+        #fp-nav ul li:hover a span,
+        .fp-slidesNav ul li:hover a span {
+            width: 10px;
+            height: 10px;
+            margin: -5px 0px 0px -5px;
+        }
+        
+        #fp-nav ul li .fp-tooltip {
+            position: absolute;
+            top: -2px;
+            color: #fff;
+            font-size: 14px;
+            font-family: arial, helvetica, sans-serif;
+            white-space: nowrap;
+            max-width: 220px;
+            overflow: hidden;
+            display: block;
+            opacity: 0;
+            width: 0;
+        }
+        
+        #fp-nav ul li:hover .fp-tooltip,
+        #fp-nav.fp-show-active a.active + .fp-tooltip {
+            -webkit-transition: opacity 0.2s ease-in;
+            transition: opacity 0.2s ease-in;
+            width: auto;
+            opacity: 1;
+        }
+        
+        #fp-nav ul li .fp-tooltip.right {
+            right: 20px;
+        }
+        
+        #fp-nav ul li .fp-tooltip.left {
+            left: 20px;
+        }
+        
+        h1 {
+            font-size: 50px;
+        }
+        
+        #fullpage {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .arrow {
+            position: absolute;
+            bottom: 5px;
+            left: 47%;
+            width: 60px;
+            height: 60px;
+            background: url("../img/core.png") no-repeat;
+            background-size: contain;
+            z-index: 50;
+            -webkit-animation: bounce 4s infinite;
+            /* Safari 4+ */
+            -moz-animation: bounce 4s infinite;
+            /* Fx 5+ */
+            -o-animation: bounce 4s infinite;
+            /* Opera 12+ */
+            animation: bounce 4s infinite;
+            /* IE 10+, Fx 29+ */
+        }
+        
+        .intro {
+            width: 100%;
+            height: 100%;
+            margin-top: 0;
+            background-image: -webkit-linear-gradient(top, #16C08E 0%, #4CCCC1 100%);
+            background-image: linear-gradient(to bottom, #16C08E 0%, #4CCCC1 100%);
+            background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #16C08E), color-stop(1, #4CCCC1));
+            background-image: -o-linear-gradient(top, #16C08E 0%, #4CCCC1 100%);
+            background-image: -moz-linear-gradient(top, #16C08E 0%, #4CCCC1 100%);
+            background-image: -ms-linear-gradient(top, #16C08E 0%, #4CCCC1 100%);
+            @include respond-to('small'){
+                h1{
+                    top:25% !important;
+                }
+                p{
+                    width:90% !important;
+                    top:30% !important;
+                }
+            }
+            @include respond-to('large'){
+                h1{
+                    top:25% !important;
+                }
+                p{
+                    width:90% !important;
+                    top:30% !important;
+                }    
+            }
+            h1 {
+                text-align:center;
+                font-size: 35px;
+                color: #333;
+                position: relative;
+                top: 35%;
+                background: rgba(0, 0, 0, 0);
+                font-family: "MavenProRegular";
+            }
+            img {
+                position: relative;
+                width: 250px;
+                height: 250px;
+                left: 23%;
+            }
+
+            p {
+                color: #fff;
+                line-height: 150%;
+                font-size: 20px;
+                width: 60%;
+                position: relative;
+                top: 40%;
+                margin: 0 auto;
+            }
+        }
+        
+        .project_1 {
+            width: 100%;
+            height: 100%;
+            background: url("../img/league.png") center no-repeat;
+            background-size: cover;
+            position: relative;
+            @include respond-to('small'){
+                .button{
+                    bottom: 12% !important;
+                    left: 36% !important;
+                }
+            }
+            @include respond-to('large'){
+                .button{
+                    bottom: 12% !important;
+                    left: 39% !important;
+                }
+            }
+            h1,
+            p {
+                color: #fff;
+                text-align: center;
+                position: relative;
+            }
+            h1 {
+                top: 25%;
+            }
+            p {
+                top: 58%;
+                font-size: 20px;
+                line-height: 175%;
+            }
+            .button {
+                z-index: 1000;
+                position: absolute;
+                bottom: 20%;
+                left: 43%;
+            }
+        }
+        
+        .social {
+            position: relative;
+            top: 43%;
+            transform: translateX(17%);
+            @include respond-to('small'){
+                top:40% !important;
+                transform: translateX(33%)
+            }
+            @include respond-to('large'){
+                top:40% !important;
+                transform: translateX(35%)
+            }
+            ul {
+                display: block;
+                width: 300px;
+                height: 50px;
+            }
+            li {
+                display: inline-block;
+            }
+            i {
+                color: #00756B;
+                transition: color 0.5s ease;
+                margin-right: 15px;
+            }
+            i:hover {
+                color: #024039;
+            }
+        }

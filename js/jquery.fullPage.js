@@ -97,9 +97,9 @@
             anchors:[],
             navigation: true,
             navigationPosition: 'right',
-            navigationTooltips: [],
-            showActiveTooltip: false,
-            slidesNavigation: false,
+            navigationTooltips: ['Intro','League App', 'Project 2'],
+            showActiveTooltip: true,
+            slidesNavigation: true,
             slidesNavPosition: 'bottom',
             scrollBar: false,
 

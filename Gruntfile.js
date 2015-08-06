@@ -34,6 +34,7 @@ module.exports = function(grunt) {
         },
     });
     /* Loads in tasks you’ve defined in the package.json file */
+    grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     /* Spefied tasks are defined here. */

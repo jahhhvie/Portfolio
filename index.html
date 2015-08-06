@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -13,43 +12,12 @@
 </head>
 
 <body>
-    <div id="nav" class="navigation">
-        <ul>
-            <li data-menuanchor="one"><a href="#one">one</a></li>
-            <li data-menuanchor="two"><a href="#two">two</a></li>
-            <li data-menuanchor="three"><a href="#three">three</a></li>
-            <li data-menuanchor="four"><a href="#four">four</a></li>
-        </ul>
-    </div>
     <div id="fullpage">
-        <section id="intro one" class="intro section">
-            <h1>Hi, I'm Javie.<br>I design and code stuff</h1>
-            <a href="#two">
-                <div class="arrow bounce"></div>
-            </a>
-        </section>
-        <section id="uno two" class="project_1 section">
-            <h1>League of Legends App</h1>
-            <p>Stay in touch and up to date with all the latest news right in the palm of your hands
-            </p>
-            <a href="#uno" class="button button-normal button-plain button-border button-rounded">
-                Link to project
-            </a>
-        </section>
-        <section id="dos three" class="project_2 section">
-            <h1>Project 2</h1>
-            <p>Just another place holder for future projects and case studies.
-                <br> Keep going though, the next section tells you a little bit about me.</p>
-            <a href="#dos" class="button button-normal button-plain button-border button-rounded">
-                Link to project
-            </a>
-        </section>
-        <section id="about four" class="about section">
-            <img src="img/me.png" alt="">
-            <div class="verb">
-                <p>Hi, Im Javie. I'm a product designer and I enjoy exploring every possible use of a product and making it better. I love studying how people interact with products and finding a way to optimize and refine that process until its second hand nature.  My job is to make the user experience as simple and seamless as possible and thats what drives me to continually learn and revise a project until its a product that works flawlessly.  </p>
-            </div>
-            <div class="social">
+        <section id="intro firstPage" class="intro section par">
+            <h1>Hi, I'm Javie. I design and code stuff</h1>
+           <!--  <img src="img/me.png" alt=""> -->
+                <p>I'm a product designer and I enjoy exploring every possible use of a product and making it better. I love studying how people interact with products and finding a way to optimize and refine that process until its second hand nature. My job is to make the user experience as simple and seamless as possible and thats what drives me to continually learn and revise a project until its a product that works flawlessly. </p>
+             <div class="social">
                 <ul>
                     <li><a href="https://twitter.com/Jahhhvie"><i class=" fa fa-twitter fa-lg"></i></a></li>
                     <li><a href="https://www.facebook.com/javie.estrada.9"><i class=" fa fa-facebook-official fa-lg"></i></a>
@@ -58,7 +26,48 @@
                     <li><a href="https://www.linkedin.com/pub/javie-estrada/9a/523/b05"><i class=" fa fa-linkedin-square fa-lg"></i></a></li>
                 </ul>
             </div>
+            <a href="#two">
+                <div class="arrow bounce"></div>
+            </a>
         </section>
+        <section id="uno secondPage" class="project_1 section par">
+            <h1>League of Legends App</h1>
+            <p>Stay in touch and up to date with all the latest news right in the palm of your hands
+            </p>
+            <a href="lol-case-study.html" class="button button-normal button-plain button-border button-rounded">
+                Link to project
+            </a>
+        </section>
+        <!--         <section id="dos thirdPage" class="project_2 section par">
+            <h1>Project 2</h1>
+            <p>Just another place holder for future projects and case studies.
+                <br> Keep going though, the next section tells you a little bit about me.</p>
+            <a href="#dos" class="button button-normal button-plain button-border button-rounded">
+                Link to project
+            </a>
+        </section> -->
+<!--         <section id="about fourthPage" class="about section par">
+            <img src="img/me.png" alt="">
+            <div class="verb">
+                <p>Hi, Im Javie. I'm a product designer and I enjoy exploring every possible use of a product and making it better. I love studying how people interact with products and finding a way to optimize and refine that process until its second hand nature. My job is to make the user experience as simple and seamless as possible and thats what drives me to continually learn and revise a project until its a product that works flawlessly. </p>
+            </div>
+        </section> -->
+    </div>
+    <div id="fp-nav" class="right">
+        <ul>
+            <li data-menuanchor="firstPage">
+                <a href="#firstPage"></a>
+            </li>
+            <li data-menuanchor="secondPage">
+                <a href="#secondPage"></a>
+            </li>
+            <li data-menuanchor="thirdPage">
+                <a href="#thirdPage"></a>
+            </li>
+            <li data-menuanchor="fourthPage">
+                <a href="#fourthPage"></a>
+            </li>
+        </ul>
     </div>
     <script src="http://localhost:35729/livereload.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -67,9 +76,10 @@
     <script type="text/javascript" src="js/jquery.fullPage.js"></script>
     <script>
     $(document).ready(function() {
+        //Navigation
         $('#fullpage').fullpage({
-            anchors: ['one', 'two', 'three', 'four'],
-            menu: '#nav'
+            anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
+            menu: '#fp-nav'
         });
     });
     </script>
